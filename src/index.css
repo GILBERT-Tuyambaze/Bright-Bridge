@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --navy: #0B2148;
+    --green: #3CB043;
+    --gold: #D4AF37;
+    --light-bg: #F9FAFB;
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground font-sans;
+        font-family: 'Open Sans', sans-serif;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+@layer components {
+    .hero-gradient {
+        background: linear-gradient(135deg, var(--green) 0%, var(--navy) 100%);
+    }
+    .card-hover {
+        @apply transition-all duration-300 hover:shadow-xl hover:scale-105;
+    }
+    .btn-primary {
+        @apply bg-[#0B2148] text-[#D4AF37] hover:bg-[#0B2148]/90 font-semibold px-6 py-3 rounded-xl transition-all duration-300;
+    }
+    .btn-secondary {
+        @apply border-2 border-[#D4AF37] text-[#0B2148] hover:bg-[#D4AF37] hover:text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300;
+    }
+    .section-padding {
+        @apply py-16 px-4 sm:px-6 lg:px-8;
+    }
+    .animate-fade-in {
+        animation: fadeIn 0.8s ease-in-out;
+    }
+    .animate-slide-up {
+        animation: slideUp 0.8s ease-out;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
