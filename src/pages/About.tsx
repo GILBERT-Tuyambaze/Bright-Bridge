@@ -9,8 +9,12 @@ export default function About() {
           <h1 className="text-5xl md:text-6xl font-bold uppercase mb-6 animate-fade-in">
             Bright Bridge Academy
           </h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto animate-slide-up">
+          <p className="text-xl text-[#D4AF37] md:text-2xl max-w-3xl mx-auto animate-slide-up">
             Discover our story, vision, and commitment to educational excellence
+          </p>
+          <br/>
+          <p className="text-lg md:text-xl mb-12 max-w-6xl mx-auto leading-relaxed animate-slide-up">
+             We are an education-dedicated organization that aims to bridge the gap of education and opportunities for students, especially those in Africa. While many African students now believe in education, dedication to their studies and a bright future resulting from their education, we realize how they usually fall short of educational opportunities, mainly due to lack of guidance and counseling, lack of access to information, and also lack of support and empowerment to uplevel their skills and readiness for continuing education, especially after graduating from high school and from the Bachelor’s level.
           </p>
         </div>
       </section>

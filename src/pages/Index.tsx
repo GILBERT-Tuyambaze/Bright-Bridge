@@ -1,9 +1,51 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Star, Users, Award, BookOpen } from 'lucide-react';
+import { ArrowRight, Star, Users, Award, BookOpen, X } from 'lucide-react';
+import { useState } from 'react';
 
 export default function Index() {
+  const [showApplicationClosed, setShowApplicationClosed]= useState(false);
+
+   const handleApplyClick = () => {
+      setShowApplicationClosed(false);
+    };
+  
+    const closeModal = () => {
+      setShowApplicationClosed(false);
+    };
+  
   return (
     <div className="min-h-screen">
+      {/* Application Closed Modal */}
+      {showApplicationClosed && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl animate-fade-in">
+            <div className="flex justify-between items-center mb-6">
+              <h3 className="text-2xl font-bold text-[#0B2148]">Application Status</h3>
+              <button 
+                onClick={closeModal}
+                className="text-gray-500 hover:text-[#0B2148] transition-colors"
+              >
+                <X className="h-6 w-6" />
+              </button>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
+                <X className="h-8 w-8 text-white" />
+              </div>
+              <p className="text-lg text-gray-700 mb-6">
+                Applications are currently closed. Please check back later for future enrollment opportunities.
+              </p>
+              <button 
+                onClick={closeModal}
+                className="bg-[#0B2148] text-[#D4AF37] hover:bg-[#0B2148]/90 font-bold px-6 py-3 rounded-xl transition-all duration-300"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Hero Section */}
       <section className="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 bg-black/20"></div>
@@ -18,10 +60,10 @@ export default function Index() {
               Bright Bridge Academy
             </h1>
             <p className="text-2xl md:text-3xl font-semibold text-[#D4AF37] mb-8 animate-slide-up">
-              "Building Bright Minds, Bridging Brighter Futures."
+              Building Bright Minds, Bridging Brighter Futures.
             </p>
             <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed animate-slide-up">
-              Welcome to Bright Bridge Academy, where excellence meets innovation. We are dedicated to nurturing young minds and preparing them for a future filled with endless possibilities through comprehensive education and character development.
+              Welcome to Bright Bridge Academy, where excellence meets innovation. We empower students across Africa with the guidance and resources needed to achieve their dreams of higher education and career success.
             </p>
             <Link 
               to="/programs"
@@ -30,6 +72,16 @@ export default function Index() {
               Explore Our Programs
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
+            <br/>
+            <br/>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGiRs4JYXb3sb6jg46vfJddYvXCdBBf92-z_hn3O_xQil0fg/viewform">
+            <button 
+              //onClick={handleApplyClick}
+              className="bg-[#D4AF37] text-[#0B2148] hover:bg-white hover:text-[#0B2148] font-bold px-10 py-4 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg text-lg animate-slide-up"
+            >
+              Apply Now
+            </button>
+            </a>
           </div>
         </div>
         
@@ -46,12 +98,10 @@ export default function Index() {
       <section className="section-padding bg-[#F9FAFB]">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-[#0B2148] uppercase mb-8 animate-fade-in">
-            Our Mission
+            Bridging the Gap to Opportunity
           </h2>
           <p className="text-xl text-gray-700 max-w-4xl mx-auto mb-12 leading-relaxed">
-            At Bright Bridge Academy, we believe education is the bridge to endless opportunities. 
-            Our mission is to provide exceptional academic programs that foster creativity, leadership, 
-            and collaboration while preparing students for success in an ever-changing world.
+            We are an education-dedicated organization aiming to connect students with opportunities they deserve. We realize many fall short due to a lack of guidance, information, and support—we are here to change that.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-16">

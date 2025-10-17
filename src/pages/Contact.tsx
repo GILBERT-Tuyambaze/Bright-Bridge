@@ -19,12 +19,28 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Simulate form submission
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  
+  const formDataToSend = new FormData();
+  formDataToSend.append("access_key", "eff1ed54-845a-4619-9fb0-da0324fc6701");
+  formDataToSend.append("name", formData.name);
+  formDataToSend.append("email", formData.email);
+  formDataToSend.append("phone", formData.phone);
+  formDataToSend.append("subject", formData.subject);
+  formDataToSend.append("message", formData.message);
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formDataToSend
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setIsSubmitted(true);
+      setTimeout(() => setIsSubmitted(false), 9000);
       setFormData({
         name: '',
         email: '',
@@ -32,8 +48,14 @@ export default function Contact() {
         subject: '',
         message: ''
       });
-    }, 3000);
-  };
+    } else {
+      alert("Something went wrong. Please try again later.");
+    }
+  } catch (error) {
+    console.error("Submission error:", error);
+    alert("Failed to send message. Please check your internet connection.");
+  }
+};
 
   return (
     <div className="min-h-screen bg-[#F9FAFB]">
@@ -77,9 +99,8 @@ export default function Contact() {
                     <h3 className="text-xl font-bold text-[#0B2148]">Address</h3>
                   </div>
                   <p className="text-gray-700 ml-16">
-                    123 Education Boulevard<br />
-                    Academic District, Learning City<br />
-                    LC 12345, United States
+                    KG 814 Street,<br />
+                   Kigali, Rwanda
                   </p>
                 </div>
 
@@ -91,9 +112,7 @@ export default function Contact() {
                     <h3 className="text-xl font-bold text-[#0B2148]">Phone</h3>
                   </div>
                   <p className="text-gray-700 ml-16">
-                    Main Office: (555) 123-4567<br />
-                    Admissions: (555) 123-4568<br />
-                    Emergency: (555) 123-4569
+                    Main Office: +250792957513
                   </p>
                 </div>
 
@@ -105,23 +124,7 @@ export default function Contact() {
                     <h3 className="text-xl font-bold text-[#0B2148]">Email</h3>
                   </div>
                   <p className="text-gray-700 ml-16">
-                    General: info@brightbridgeacademy.edu<br />
-                    Admissions: admissions@brightbridgeacademy.edu<br />
-                    Support: support@brightbridgeacademy.edu
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-2xl shadow-lg card-hover">
-                  <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-[#D4AF37] rounded-full flex items-center justify-center mr-4">
-                      <Clock className="h-6 w-6 text-white" />
-                    </div>
-                    <h3 className="text-xl font-bold text-[#0B2148]">Office Hours</h3>
-                  </div>
-                  <p className="text-gray-700 ml-16">
-                    Monday - Friday: 8:00 AM - 5:00 PM<br />
-                    Saturday: 9:00 AM - 2:00 PM<br />
-                    Sunday: Closed
+                    General:bright.bridgeprep@gmail.com
                   </p>
                 </div>
               </div>
@@ -145,6 +148,7 @@ export default function Contact() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
+                    
                       <label htmlFor="name" className="block text-sm font-semibold text-[#0B2148] mb-2">
                         Your Name *
                       </label>
@@ -187,7 +191,7 @@ export default function Contact() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        placeholder="(555) 123-4567"
+                        placeholder="(+250) 123-4567"
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3CB043] focus:border-transparent transition-all duration-300"
                       />
                     </div>

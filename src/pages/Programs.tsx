@@ -1,4 +1,4 @@
-import { Computer, Palette, Globe, Users, BookOpen, Microscope, Music, Trophy, GraduationCap, Target, X } from 'lucide-react';
+import { BookOpen, Microscope, GraduationCap, Target, X } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Programs() {
@@ -6,53 +6,30 @@ export default function Programs() {
 
   const programs = [
     {
-      title: "STEM & Technology",
-      description: "Cutting-edge science, technology, engineering, and mathematics programs that prepare students for the digital future with hands-on learning experiences.",
-      icon: Computer,
-      features: ["Robotics & Coding", "Advanced Mathematics", "Scientific Research", "Engineering Design"],
+      title: "University Application & Scholarship Guidance",
+      description: "We assist students in applying to universities across the USA, Canada, UK, Europe, China, Turkey, and Africa, helping them secure admissions and scholarships.",
+      icon: GraduationCap,
+      features: ["Personalized university selection","Application essay writing support","Scholarship search and application"],
       color: "bg-[#3CB043]",
       hoverColor: "hover:bg-[#0B2148]"
     },
     {
-      title: "Arts & Innovation",
-      description: "Creative programs that foster artistic expression, design thinking, and innovative problem-solving skills through multimedia and traditional arts.",
-      icon: Palette,
-      features: ["Visual Arts", "Digital Design", "Creative Writing", "Innovation Labs"],
+      title: "SAT/ACT Preparation",
+      description: "Our program helps students improve their scores, giving them a better chance of being admitted to their dream university. We equip them with skills to excel in their exams.",
+      icon: BookOpen,
+      features: ["Comprehensive subject review", "Proven test-taking strategies", "Practice tests and performance analysis"],
       color: "bg-[#D4AF37]",
       hoverColor: "hover:bg-[#3CB043]"
     },
     {
-      title: "Languages & Leadership",
-      description: "Comprehensive language programs and leadership development to create global citizens and effective communicators in our interconnected world.",
-      icon: Globe,
-      features: ["Multilingual Studies", "Public Speaking", "Cultural Exchange", "Leadership Training"],
+      title: "Career Guidance",
+      description: "We help high school students choose the right career path by providing them with information on various professions, enabling them to make informed decisions about their future.",
+      icon: Microscope,
+      features: ["Exploration of career options", "Alignment of interests with professions", "Informed decisions for future studies"],
       color: "bg-[#0B2148]",
       hoverColor: "hover:bg-[#D4AF37]"
     },
-    {
-      title: "Community Engagement",
-      description: "Service-learning programs that connect students with their community while developing social responsibility and civic awareness.",
-      icon: Users,
-      features: ["Volunteer Projects", "Social Impact", "Community Partnerships", "Civic Education"],
-      color: "bg-[#3CB043]",
-      hoverColor: "hover:bg-[#0B2148]"
-    },
-    {
-      title: "Academic Excellence",
-      description: "Rigorous academic programs across all core subjects with personalized learning approaches and advanced placement opportunities.",
-      icon: BookOpen,
-      features: ["Advanced Placement", "Honors Courses", "Research Projects", "Academic Mentoring"],
-      color: "bg-[#D4AF37]",
-      hoverColor: "hover:bg-[#0B2148]"
-    },
-    {
-      title: "Research & Discovery",
-      description: "Hands-on research opportunities that encourage scientific inquiry, critical thinking skills, and real-world problem solving.",
-      icon: Microscope,
-      features: ["Lab Research", "Field Studies", "Data Analysis", "Scientific Method"],
-      color: "bg-[#0B2148]",
-      hoverColor: "hover:bg-[#3CB043]"
-    }
+    
   ];
 
   const preparatoryPrograms = [
@@ -61,7 +38,7 @@ export default function Programs() {
       description: "Through the Bright Bridge Prep program, we offer personalized guidance to scholars, expose them to opportunities, and help them get ready for higher education.",
       goal: "We help students apply and study to universities abroad in top destinations such as the United States, Canada, United Kingdom, Germany, Australia, and several others.",
       icon: GraduationCap,
-      features: ["University Applications", "English Writing Workshops", "Math Preparation", "Career Pathway Exploration"],
+      features: ["University Applications", "English Writing/Reading Workshops", "SAT/ACT Preparation", "Career Pathway Exploration"],
       color: "bg-gradient-to-br from-[#3CB043] to-[#0B2148]"
     }
   ];
@@ -167,9 +144,6 @@ export default function Programs() {
                           </li>
                         ))}
                       </ul>
-                      <button className="w-full mt-6 bg-[#D4AF37] text-[#0B2148] hover:bg-white hover:text-[#0B2148] font-bold py-3 px-6 rounded-xl transition-all duration-300">
-                        Learn More
-                      </button>
                     </div>
                   </div>
                 </div>
@@ -230,10 +204,6 @@ export default function Programs() {
                         ))}
                       </ul>
                     </div>
-                    
-                    <button className="w-full bg-[#0B2148] text-[#D4AF37] hover:bg-[#0B2148]/90 font-bold py-3 px-4 rounded-xl transition-all duration-300 group-hover:scale-105 hover:shadow-lg">
-                      Learn More
-                    </button>
                   </div>
                 </div>
               );
@@ -243,7 +213,7 @@ export default function Programs() {
       </section>
 
       {/* Call to Action */}
-      <section className="section-padding bg-white">
+      <section id="apply" className="section-padding bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="bg-gradient-to-r from-[#3CB043] via-[#0B2148] to-[#D4AF37] p-12 rounded-3xl text-white text-center shadow-2xl">
             <h3 className="text-4xl md:text-5xl font-bold uppercase mb-6">
@@ -255,12 +225,14 @@ export default function Programs() {
               faculty and innovative curriculum await you.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGiRs4JYXb3sb6jg46vfJddYvXCdBBf92-z_hn3O_xQil0fg/viewform">
               <button 
-                onClick={handleApplyClick}
+                //onClick={handleApplyClick}
                 className="bg-[#D4AF37] text-[#0B2148] hover:bg-white hover:text-[#0B2148] font-bold px-10 py-4 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg text-lg"
               >
                 Apply Now
               </button>
+              </a>
             </div>
           </div>
         </div>

@@ -40,12 +40,13 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-gray-600 mt-6 pt-6 text-center">
-          <p className="text-sm text-gray-300">
-           © {currentYear} Bright Bridge Academy | All Rights Reserved. | <a href="https://gilbert-tuyambaze.vercel.app" className="text-gray-300 hover:text-orange-500">Developed By Gilbert TUYAMBAZE</a>
-          </p>
-        </div>
-      </div>
-    </footer>
+     <div className="border-t border-gray-600 mt-6 pt-6 text-center">
+  <p className="text-sm text-gray-300">
+    © {currentYear} Bright Bridge Academy | All Rights Reserved. | <a href="https://gilbert-tuyambaze.vercel.app" className="text-gray-300 hover:text-orange-500">Developed By Gilbert TUYAMBAZE</a>
+  </p>
+</div>
+</div>
+</footer>
+
   );
 }
