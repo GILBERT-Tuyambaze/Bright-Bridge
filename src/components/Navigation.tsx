@@ -8,7 +8,7 @@ export default function Navigation() {
   const location = useLocation();
 
   // Toggle this to open/close applications globally
-  const isApplicationOpen = false; // <-- change to true when applications are open
+  const isApplicationOpen = true; // <-- change to true when applications are open
 
   const handleApplyClick = () => {
     if (isApplicationOpen) {

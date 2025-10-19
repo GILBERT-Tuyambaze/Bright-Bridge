@@ -7,7 +7,7 @@ export default function Footer() {
   const [showApplicationClosed, setShowApplicationClosed] = useState(false);
 
   // Toggle this to open/close applications
-  const isApplicationOpen = false; // set to true when applications are open
+  const isApplicationOpen = true; // set to true when applications are open
 
   const handleApplyClick = () => {
     if (isApplicationOpen) {

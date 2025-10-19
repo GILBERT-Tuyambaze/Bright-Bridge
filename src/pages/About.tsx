@@ -10,11 +10,14 @@ export default function About() {
             Bright Bridge Academy
           </h1>
           <p className="text-xl text-[#D4AF37] md:text-2xl max-w-3xl mx-auto animate-slide-up">
-            Discover our story, vision, and commitment to educational excellence
+            Discover our story, mission, and commitment to helping students succeed in higher education abroad
           </p>
           <br/>
           <p className="text-lg md:text-xl mb-12 max-w-6xl mx-auto leading-relaxed animate-slide-up">
-             We are an education-dedicated organization that aims to bridge the gap of education and opportunities for students, especially those in Africa. While many African students now believe in education, dedication to their studies and a bright future resulting from their education, we realize how they usually fall short of educational opportunities, mainly due to lack of guidance and counseling, lack of access to information, and also lack of support and empowerment to uplevel their skills and readiness for continuing education, especially after graduating from high school and from the Bachelor’s level.
+            We are an education-dedicated organization that aims to bridge the gap of education and opportunities 
+            for students, especially those in Africa. While many African students are dedicated to their studies, 
+            they often fall short of opportunities due to lack of guidance, access to information, and support 
+            for preparing for higher education abroad.
           </p>
         </div>
       </section>
@@ -31,9 +34,8 @@ export default function About() {
                 <h2 className="text-3xl font-bold text-[#0B2148] uppercase">Our Vision</h2>
               </div>
               <p className="text-gray-700 text-lg leading-relaxed">
-                To be a leading educational institution that empowers students to become innovative thinkers, 
-                compassionate leaders, and global citizens who contribute positively to society and shape 
-                a brighter future for all.
+                To become a leading college admissions consultancy, renowned for helping students achieve their academic 
+                and career aspirations abroad.
               </p>
             </div>
 
@@ -45,9 +47,8 @@ export default function About() {
                 <h2 className="text-3xl font-bold text-[#0B2148] uppercase">Our Mission</h2>
               </div>
               <p className="text-gray-700 text-lg leading-relaxed">
-                To provide exceptional, holistic education that nurtures academic excellence, character development, 
-                and creative thinking while fostering a supportive community where every student can discover 
-                their potential and achieve their dreams.
+                To provide students with the guidance, resources, and support they need to navigate the college 
+                admissions process successfully and gain admission to top universities abroad.
               </p>
             </div>
           </div>
@@ -68,10 +69,8 @@ export default function About() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-[#0B2148] uppercase mb-6">Our Story</h2>
             <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Founded with a vision to transform education, Bright Bridge Academy has been dedicated to 
-              creating an environment where students thrive academically, socially, and personally. 
-              Our journey began with a simple belief: every child deserves access to quality education 
-              that prepares them for success in life.
+              Bright Bridge Academy was founded to help students access higher education opportunities abroad. 
+              We believe every student deserves guidance and support to prepare for universities in top destinations.
             </p>
           </div>
 
@@ -79,35 +78,29 @@ export default function About() {
             <div>
               <h3 className="text-3xl font-bold text-[#0B2148] mb-6">Building Bridges to Success</h3>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                At Bright Bridge Academy, we understand that education is more than just academic achievement. 
-                It's about building character, fostering creativity, and developing the skills needed to 
-                navigate an ever-changing world.
+                Education is more than academic achievement—it's about building skills, confidence, and readiness 
+                for higher education abroad.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed">
-                Our dedicated team of educators works tirelessly to create innovative learning experiences 
-                that engage students and inspire them to reach their full potential. We believe in the 
-                power of education to transform lives and communities.
+                Our team works closely with students to provide personalized guidance, helping them identify their goals, 
+                explore opportunities, and successfully navigate the college admissions process.
               </p>
             </div>
             <div className="bg-gradient-to-br from-[#3CB043] to-[#0B2148] p-8 rounded-2xl text-white">
-              <h4 className="text-2xl font-bold mb-4">Why Choose Us?</h4>
-              <ul className="space-y-3">
-                <li className="flex items-center">
-                  <Award className="h-5 w-5 text-[#D4AF37] mr-3" />
-                  <span>Award-winning academic programs</span>
-                </li>
-                <li className="flex items-center">
-                  <Users className="h-5 w-5 text-[#D4AF37] mr-3" />
-                  <span>Small class sizes for personalized attention</span>
-                </li>
-                <li className="flex items-center">
-                  <Lightbulb className="h-5 w-5 text-[#D4AF37] mr-3" />
-                  <span>Innovative teaching methodologies</span>
-                </li>
-                <li className="flex items-center">
-                  <Globe className="h-5 w-5 text-[#D4AF37] mr-3" />
-                  <span>Global perspective and cultural awareness</span>
-                </li>
+              <h4 className="text-2xl font-bold mb-4">Bright Bridge Prep Program</h4>
+              <p className="mb-4">
+                Through the Bright Bridge Prep program, we prepare students for higher education abroad.
+              </p>
+              <h5 className="font-bold mb-2">Program Goal</h5>
+              <p className="mb-4">
+                We help students apply and study at top universities in the US, Canada, UK, Germany, Australia, and more.
+              </p>
+              <h5 className="font-bold mb-2">Key Features</h5>
+              <ul className="list-disc list-inside space-y-2">
+                <li>University Applications</li>
+                <li>English Writing/Reading Workshops</li>
+                <li>SAT/ACT Preparation</li>
+                <li>Career Pathway Exploration</li>
               </ul>
             </div>
           </div>
@@ -131,8 +124,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-[#0B2148] uppercase mb-4">Excellence</h3>
               <p className="text-gray-700">
-                We strive for the highest standards in everything we do, from academic achievement 
-                to character development and community service.
+                We strive for the highest standards in everything we do.
               </p>
             </div>
 
@@ -140,10 +132,9 @@ export default function About() {
               <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-6">
                 <Lightbulb className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-[#0B2148] uppercase mb-4">Creativity</h3>
+              <h3 className="text-2xl font-bold text-[#0B2148] uppercase mb-4">Integrity</h3>
               <p className="text-gray-700">
-                We encourage innovative thinking, artistic expression, and creative problem-solving 
-                across all areas of learning and development.
+                We uphold honesty and transparency in all interactions.
               </p>
             </div>
 
@@ -151,10 +142,9 @@ export default function About() {
               <div className="w-16 h-16 bg-[#3CB043] rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-[#0B2148] uppercase mb-4">Leadership</h3>
+              <h3 className="text-2xl font-bold text-[#0B2148] uppercase mb-4">Empowerment</h3>
               <p className="text-gray-700">
-                We develop confident, ethical leaders who inspire others and make positive 
-                contributions to their communities and the world.
+                We equip students with the tools and confidence to succeed.
               </p>
             </div>
 
@@ -164,8 +154,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-[#0B2148] uppercase mb-4">Collaboration</h3>
               <p className="text-gray-700">
-                We build strong partnerships between students, families, educators, and the 
-                community to create a supportive learning environment.
+                We work together with students and parents to achieve common goals.
               </p>
             </div>
           </div>
