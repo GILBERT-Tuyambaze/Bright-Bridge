@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Linkedin, X } from 'lucide-react';
+import { Youtube, Instagram, X } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import { useState } from 'react';
 
 export default function Footer() {
@@ -85,10 +86,9 @@ export default function Footer() {
 
         {/* Social Media Links */}
         <div className="flex justify-center mt-6 space-x-6">
-          <a href="#" className="text-white hover:text-[#D4AF37] transition-colors"><Facebook size={20} /></a>
-          <a href="#" className="text-white hover:text-[#D4AF37] transition-colors"><Twitter size={20} /></a>
-          <a href="#" className="text-white hover:text-[#D4AF37] transition-colors"><Instagram size={20} /></a>
-          <a href="#" className="text-white hover:text-[#D4AF37] transition-colors"><Linkedin size={20} /></a>
+          <a href="https://www.youtube.com/@BRIGHT.BRIDGEPREP" className="text-white hover:text-[#D4AF37] transition-colors" target="_blank" rel="noopener noreferrer"><Youtube size={20} /></a>
+          <a href="https://www.instagram.com/bright_bridge_prep?igsh=YzljYTk1ODg3Zg%3D%3D" className="text-white hover:text-[#D4AF37] transition-colors" target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>
+          <a href="https://www.whatsapp.com/channel/0029Vb6SPpUGpLHVnxpBS22v" className="text-white hover:text-[#D4AF37] transition-colors" target="_blank" rel="noopener noreferrer"><FaWhatsapp size={20} /></a>
         </div>
 
         {/* Footer Bottom */}

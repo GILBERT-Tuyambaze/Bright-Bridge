@@ -149,6 +149,22 @@ export default function Programs() {
         </div>
       </section>
 
+      {/* Program Fees Section */}
+      <section className="section-padding bg-[#F9FAFB]">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#0B2148] uppercase mb-6">
+            Program Fees
+          </h2>
+          <p className="text-2xl text-[#3CB043] font-semibold mb-4">
+            2,500 RWF <span className="text-gray-600 text-lg font-normal">per month</span>
+          </p>
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            This small monthly contribution helps keep the program alive by covering
+            essential costs and other basic needs that ensure continuous learning and smooth operation of our community.
+          </p>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section id="apply" className="section-padding bg-white">
         <div className="max-w-7xl mx-auto">
