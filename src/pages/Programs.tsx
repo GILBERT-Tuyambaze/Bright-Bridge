@@ -156,7 +156,7 @@ export default function Programs() {
             Program Fees
           </h2>
           <p className="text-2xl text-[#3CB043] font-semibold mb-4">
-            2,500 RWF <span className="text-gray-600 text-lg font-normal">per month</span>
+            25,000 RWF <span className="text-gray-600 text-lg font-normal">per month</span>
           </p>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
             This small monthly contribution helps keep the program alive by covering
