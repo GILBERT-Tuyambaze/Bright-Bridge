@@ -5,7 +5,7 @@ export default function Programs() {
   const [showApplicationClosed, setShowApplicationClosed] = useState(false);
 
   // Toggle this to open/close applications
-  const isApplicationOpen = true; // <-- set to true when applications are open
+  const isApplicationOpen = false; // <-- set to true when applications are open
 
   const handleApplyClick = () => {
     if (isApplicationOpen) {
