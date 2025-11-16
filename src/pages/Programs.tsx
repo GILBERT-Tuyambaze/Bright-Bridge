@@ -217,7 +217,7 @@ export default function Programs() {
           <h2 className="text-4xl md:text-5xl font-bold text-[#0B2148] uppercase mb-6">Program Fees</h2>
           <p className="text-2xl text-[#3CB043] font-semibold mb-4 animate-pulse">25,000 RWF <span className="text-gray-600 text-lg font-normal">per month</span></p>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed mb-6">
-            This small monthly contribution helps keep the program alive by covering essential costs and other basic needs.
+            This small monthly contribution helps keep the program alive by covering essential costs and other basic needs. And payment should be allocated to this momo accout: +250 782 118 514 under Inshimwe Jean...
           </p>
 
           <button onClick={() => setHasPaid(!hasPaid)} className={`mb-8 px-6 py-3 rounded-xl font-bold ${hasPaid ? 'bg-[#3CB043] text-white' : 'bg-[#D4AF37] text-[#0B2148]'} hover:scale-105 transition-transform duration-300`}>
